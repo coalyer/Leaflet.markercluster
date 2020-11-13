@@ -39,7 +39,13 @@
 		}
 
 		map.addLayer(markers);
-
+			window.addEventListener('message', function(event) {
+			    //event.data获取传过来的数据
+			  console.log(event.data)
+				document.open();
+				document.write(event.data);
+				document.close();
+			});
 	</script>
 </body>
 </html>
